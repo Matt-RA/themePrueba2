@@ -5,7 +5,7 @@
 <!--Dentro de head hemos usado bloginfo( 'charset' );
 para que seleccione la codificación predeterminada de nuestra instalación de WordPress. -->
 	<meta charset=	<?php bloginfo( 'charset' ); ?>">
-	<title><?php wp_title(); ?>wea</title>
+	<title><?php wp_title(); ?></title>
 
 	<!-- Definir viewport para dispositivos web móviles -->
 	<meta name="viewport" content="width=device-width, minimum-scale=1">
