@@ -26,5 +26,6 @@
 <?php endif; ?>
 <!-- Archivo de barra lateral por defecto -->
 <?php get_sidebar(); ?>
+<?php the_tags('<ul><li>','</li><li>','</li></ul>'); ?>   
 <!-- Archivo de pié global de Wordpress -->
 <?php get_footer(); ?>
