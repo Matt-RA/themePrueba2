@@ -1,5 +1,7 @@
 <!-- Archivo de cabecera global de Wordpress -->
 <?php get_header(); ?>
+<!-- Búsqueda -->
+<p>Resultados de búsqueda para <strong><?php echo get_search_query() ?></strong></p>
 <!-- Listado de posts -->
 <?php if ( have_posts() ) : ?>
   <section>
@@ -12,7 +14,6 @@
         </header>
         <?php the_excerpt(); ?>
         <footer>
-			<?php the_tags('<ul><li>','</li><li>','</li></ul>'); ?>   
             <address>Por <?php the_author_posts_link() ?></address>
         </footer>
       </article>
@@ -27,5 +28,6 @@
 <?php endif; ?>
 <!-- Archivo de barra lateral por defecto -->
 <?php get_sidebar(); ?>
+<?php the_tags('<ul><li>','</li><li>','</li></ul>'); ?>   
 <!-- Archivo de pié global de Wordpress -->
 <?php get_footer(); ?>
